@@ -51,7 +51,7 @@ namespace tron.bob.nick
          
             spriteBatch = new SpriteBatch(GraphicsDevice);
             this.grid = new Grid(this);
-            this.player.Add(new Player1(this,Vector2.Zero,7.5f);
+            this.player.Add(new Player1(this,Vector2.Zero,7.5f,Color.Blue,PlayerIndex.One));
 
             
         }
@@ -64,11 +64,14 @@ namespace tron.bob.nick
 
         protected override void Update(GameTime gameTime)
         {
-            foreach (Player1 player in this.player)
-            {
-                player.Update(gameTime);
-            }
+           
+                foreach (Player1 player in this.player)
+                {
+                    player.Update(gameTime);
 
+                }
+            
+            
             Input.update();
 
             base.Update(gameTime);
@@ -80,7 +83,7 @@ namespace tron.bob.nick
             this.grid.draw(gameTime);
             foreach (Player1 player in this.player)
             {
-                this.player.Draw(gameTime);
+                player.Draw(gameTime);
             }
             this.spriteBatch.End();
 

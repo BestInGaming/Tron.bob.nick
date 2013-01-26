@@ -36,6 +36,7 @@ namespace tron.bob.nick
             ks = Keyboard.GetState();
             oms = ms;
             ms = Mouse.GetState();
+            ogps = gps;
             mouseRectangle.X = ms.X;
             mouseRectangle.Y = ms.Y;
             
@@ -83,6 +84,15 @@ namespace tron.bob.nick
         public static MouseState mouseState()
         {
             return (ms);
+        }
+        public static GamePadState GamePadState(PlayerIndex index)
+        {
+            return gps;
+        }
+        public static bool DpasDetectPress(PlayerIndex index,Buttons button)
+        {
+            gps = GamePad.GetState(index);
+            return (gps.IsButtonDown(button) && ogps.IsButtonUp(button));
         }
 
         //draw

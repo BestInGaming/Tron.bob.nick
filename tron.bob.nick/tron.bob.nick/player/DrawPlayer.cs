@@ -28,7 +28,7 @@ namespace tron.bob.nick
         {
             this.drawPlayer.Game.SpriteBatch.Draw(this.drawPlayer.Texture,
                                               this.drawPlayer.Rectangle,
-                                              Color.Red);
+                                              this.drawPlayer.ColorPlayer);
         }
     }
 }

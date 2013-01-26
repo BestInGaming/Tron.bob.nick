@@ -16,5 +16,6 @@ namespace tron.bob.nick
         TronGame Game { get; }
         Rectangle Rectangle { get; }
         Texture2D Texture { get; }
+        Color ColorPlayer { get; }
     }
 }

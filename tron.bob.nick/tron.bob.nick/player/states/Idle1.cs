@@ -72,19 +72,19 @@ namespace tron.bob.nick
                     break;
                 
             }
-            if (Input.EdgeDetectKeyDown(Keys.W))
+            if (Input.EdgeDetectKeyDown(Keys.W)|| Input.DpasDetectPress(player.Index,Buttons.DPadUp))
             {
                 this.player.State = new Up1(player);
             }
-            if (Input.EdgeDetectKeyDown(Keys.S))
+            if (Input.EdgeDetectKeyDown(Keys.S) || Input.DpasDetectPress(player.Index, Buttons.DPadDown))
             {
                 this.player.State = new Down1(player);
             }
-            if (Input.EdgeDetectKeyDown(Keys.A))
+            if (Input.EdgeDetectKeyDown(Keys.A) || Input.DpasDetectPress(player.Index, Buttons.DPadLeft))
             {
                 this.player.State = new Left1(player);
             }
-            if (Input.EdgeDetectKeyDown(Keys.D))
+            if (Input.EdgeDetectKeyDown(Keys.D) || Input.DpasDetectPress(player.Index, Buttons.DPadRight))
             {
                 this.player.State = new Right1(player);
             }

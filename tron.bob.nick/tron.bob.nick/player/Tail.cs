@@ -23,6 +23,10 @@ namespace tron.bob.nick
            set { this.position = value;
            }
        }
+       public Rectangle Rectangle
+       {
+           get { return this.rectangle; }
+       }
        public Tail(TronGame game, Vector2 position,Color color)
        {
            this.game = game;
