@@ -14,10 +14,12 @@ namespace tron.bob.nick
     public class Up1 : DrawPlayer
     {
         private Player1 player;
+        private Vector2 startPos;
 
         public Up1(Player1 player) : base(player)
         {
             this.player = player;
+            this.startPos = this.player.Position;
             this.initialize();
         }
 
@@ -35,6 +37,7 @@ namespace tron.bob.nick
         {
 
             this.player.Position += new Vector2(0,-this.player.Speed);
+            this.player.TailList.Add(new Tail(this.player.Game, this.player.Position + new Vector2(0,8), Color.Yellow));
             if (Input.DetectKeyUp(Keys.W))
             {
                 this.player.State = new Idle1(player,"Up");

@@ -19,7 +19,7 @@ namespace tron.bob.nick
         private Rectangle rectangle;
         private Vector2 position;
         private float speed;
-        private List<Tail> TailList = new List<Tail>();
+        private List<Tail> tailList = new List<Tail>();
         DrawPlayer state;
         public Texture2D Texture
         {
@@ -37,6 +37,11 @@ namespace tron.bob.nick
         public DrawPlayer State
         {
             set {  this.state = value ; }
+        }
+        public List<Tail> TailList
+        {
+            get { return this.tailList; }
+            set { this.tailList = value; }
         }
         public Vector2 Position
         {
@@ -75,7 +80,6 @@ namespace tron.bob.nick
         public void Update(GameTime gameTime)
         {
             this.state.Update(gameTime);
-            this.TailList.Add(new Tail(this.game,this.position,Color.Magenta));
             foreach (Tail tail in this.TailList)
             {
                 tail.Update(gameTime);
@@ -83,11 +87,12 @@ namespace tron.bob.nick
         }
         public void Draw(GameTime gameTime)
         {
+            this.state.Draw(gameTime);
+
             foreach (Tail tail in this.TailList)
             {
                 tail.Draw(gameTime);
             }
-            this.state.Draw(gameTime);
         }
     }
 }

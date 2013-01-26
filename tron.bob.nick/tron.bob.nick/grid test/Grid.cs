@@ -15,7 +15,7 @@ namespace tron.bob.nick
     {
         private Texture2D texture1px;
         private int gridSize = 16;
-        private int width = 800, height = 600;
+        private int width = 1980, height = 1020;
         private TronGame game;
 
         public Grid(TronGame game)
@@ -26,7 +26,7 @@ namespace tron.bob.nick
         }
         public void draw(GameTime gameTime)
         {
-             int cols = 60;
+             int cols = 180;
              int rows = 60;
              int centerX = 0;
              int centerY = 0;

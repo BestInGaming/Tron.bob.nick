@@ -17,7 +17,7 @@ namespace tron.bob.nick
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         private Grid grid;
-        private Player1 player;
+        private List<Player1> player = new List<Player1>();
 
         public SpriteBatch SpriteBatch
         {
@@ -32,8 +32,8 @@ namespace tron.bob.nick
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            graphics.PreferredBackBufferWidth = 800;
-            graphics.PreferredBackBufferHeight = 600;
+            graphics.PreferredBackBufferWidth = 1980;
+            graphics.PreferredBackBufferHeight = 1020;
             Window.Title  = "{TRON}";
             graphics.ApplyChanges();
         }
@@ -51,7 +51,7 @@ namespace tron.bob.nick
          
             spriteBatch = new SpriteBatch(GraphicsDevice);
             this.grid = new Grid(this);
-            this.player = new Player1(this, new Vector2(16, 16), 5f);
+            this.player.Add(new Player1(this,Vector2.Zero,7.5f);
 
             
         }
@@ -64,8 +64,10 @@ namespace tron.bob.nick
 
         protected override void Update(GameTime gameTime)
         {
-
-            player.Update(gameTime);
+            foreach (Player1 player in this.player)
+            {
+                player.Update(gameTime);
+            }
 
             Input.update();
 
@@ -76,7 +78,10 @@ namespace tron.bob.nick
         {
             this.spriteBatch.Begin();
             this.grid.draw(gameTime);
-            this.player.Draw(gameTime);
+            foreach (Player1 player in this.player)
+            {
+                this.player.Draw(gameTime);
+            }
             this.spriteBatch.End();
 
 

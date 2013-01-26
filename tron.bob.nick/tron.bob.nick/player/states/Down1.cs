@@ -35,6 +35,7 @@ namespace tron.bob.nick
         {
 
             this.player.Position += new Vector2(0, this.player.Speed);
+            this.player.TailList.Add(new Tail(this.player.Game, this.player.Position + new Vector2(0,-8),Color.Yellow));
             if (Input.DetectKeyUp(Keys.S))
             {
                 this.player.State = new Idle1(player, "Down");
