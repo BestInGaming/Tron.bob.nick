@@ -14,11 +14,17 @@ namespace tron.bob.nick
 
     public class TronGame : Microsoft.Xna.Framework.Game
     {
+        //fields
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        private Grid grid;
-        private List<Player1> player = new List<Player1>();
+        private IGameState gameState;   
 
+        //properties
+        public IGameState GameState
+        {
+            get { return this.gameState; }
+            set { this.gameState = value; }
+        }
         public SpriteBatch SpriteBatch
         {
             get { return this.spriteBatch; }
@@ -28,6 +34,8 @@ namespace tron.bob.nick
             get { return this.graphics; }
         }
 
+
+        //constructor
         public TronGame()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -39,19 +47,19 @@ namespace tron.bob.nick
         }
 
        
+        //Initialize
         protected override void Initialize()
         {
 
             base.Initialize();
         }
 
-
+        //LoadContent
         protected override void LoadContent()
         {
          
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            this.grid = new Grid(this);
-            this.player.Add(new Player1(this,Vector2.Zero,7.5f,Color.Blue,PlayerIndex.One));
+            this.gameState = new StartScene(this);
 
             
         }
@@ -62,29 +70,20 @@ namespace tron.bob.nick
         }
 
 
+        //Update
         protected override void Update(GameTime gameTime)
-        {
-           
-                foreach (Player1 player in this.player)
-                {
-                    player.Update(gameTime);
-
-                }
-            
-            
+        {       
+            this.gameState.Update(gameTime);
             Input.update();
-
             base.Update(gameTime);
         }
 
+
+        //Draw
         protected override void Draw(GameTime gameTime)
         {
             this.spriteBatch.Begin();
-            this.grid.draw(gameTime);
-            foreach (Player1 player in this.player)
-            {
-                player.Draw(gameTime);
-            }
+            this.gameState.Draw(gameTime);
             this.spriteBatch.End();
 
 

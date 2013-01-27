@@ -30,14 +30,16 @@ namespace tron.bob.nick
              this.texture = game.Content.Load<Texture2D>(pathName);
              this.rectangle = new Rectangle((int)this.position.X,(int)this.position.Y,this.texture.Width,this.texture.Height);
          }
+
+         //Draw
          public void Draw(GameTime gameTime)
          {
-             //Draw
+             
              this.game.SpriteBatch.Draw(this.texture, this.rectangle, Color.White);
          }
          public void Draw(SpriteBatch spritebatch,Color color)
          {
-             //Draw
+             
              spritebatch.Draw(this.texture, this.rectangle, color);
          }
     }
