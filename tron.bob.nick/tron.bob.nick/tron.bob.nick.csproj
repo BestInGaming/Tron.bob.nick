@@ -16,7 +16,7 @@
     <XnaProfile>HiDef</XnaProfile>
     <XnaCrossPlatformGroupID>ba8ee743-6ee0-499d-a060-ef5227344337</XnaCrossPlatformGroupID>
     <XnaOutputType>Game</XnaOutputType>
-    <ApplicationIcon>player\Game.ico</ApplicationIcon>
+    <ApplicationIcon>GameScenes\PlayScene\player\Game.ico</ApplicationIcon>
     <Thumbnail>GameThumbnail.png</Thumbnail>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -107,25 +107,33 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameScenes\HelpScene\HelpScene.cs" />
+    <Compile Include="GameScenes\LevelEditorScene\LevelEditorScene.cs" />
+    <Compile Include="GameScenes\Options\OptionScene.cs" />
+    <Compile Include="GameScenes\PlayScene\player\states\Down1.cs" />
+    <Compile Include="GameScenes\PlayScene\player\states\Idle1.cs" />
+    <Compile Include="GameScenes\PlayScene\player\states\Left1.cs" />
+    <Compile Include="GameScenes\PlayScene\player\states\Right1.cs" />
+    <Compile Include="GameScenes\PlayScene\player\states\Up1.cs" />
+    <Compile Include="GameScenes\PlayScene\PlayScene.cs" />
+    <Compile Include="GameScenes\QuitScene\QuitScene.cs" />
+    <Compile Include="GameScenes\StartScene\MenuStartScene.cs" />
+    <Compile Include="GameScenes\StartScene\StartScene.cs" />
+    <Compile Include="game\IGameState.cs" />
     <Compile Include="grid test\Grid.cs" />
     <Compile Include="helperClass\Image.cs" />
     <Compile Include="input\Input.cs" />
-    <Compile Include="player\DrawPlayer.cs" />
-    <Compile Include="player\IDrawPlayer.cs" />
-    <Compile Include="player\IPlayer.cs" />
-    <Compile Include="player\Player1.cs" />
-    <Compile Include="player\states\Down1.cs" />
-    <Compile Include="player\states\Up1.cs" />
-    <Compile Include="player\states\Left1.cs" />
-    <Compile Include="player\states\Right1.cs" />
-    <Compile Include="player\states\Idle1.cs" />
-    <Compile Include="player\Tail.cs" />
+    <Compile Include="GameScenes\PlayScene\player\DrawPlayer.cs" />
+    <Compile Include="GameScenes\PlayScene\player\IDrawPlayer.cs" />
+    <Compile Include="GameScenes\PlayScene\player\IPlayer.cs" />
+    <Compile Include="GameScenes\PlayScene\player\Player1.cs" />
+    <Compile Include="GameScenes\PlayScene\player\Tail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="game\Program.cs" />
     <Compile Include="game\TronGame.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="player\Game.ico" />
+    <Content Include="GameScenes\PlayScene\player\Game.ico" />
     <Content Include="GameThumbnail.png" />
   </ItemGroup>
   <ItemGroup>

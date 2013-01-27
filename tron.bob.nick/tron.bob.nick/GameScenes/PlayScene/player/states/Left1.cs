@@ -11,11 +11,11 @@ using Microsoft.Xna.Framework.Media;
 
 namespace tron.bob.nick
 {
-    public class Down1 : DrawPlayer
+    public class Left1 : DrawPlayer
     {
         private Player1 player;
-        private string direction;
-        public Down1(Player1 player) : base(player)
+
+        public Left1(Player1 player) : base(player)
         {
             this.player = player;
             this.initialize();
@@ -34,15 +34,15 @@ namespace tron.bob.nick
         public override void Update(GameTime gameTime)
         {
 
-            this.player.Position += new Vector2(0, this.player.Speed);
-            this.player.TailList.Add(new Tail(this.player.Game, this.player.Position + new Vector2(0,-8),Color.Yellow));
-            if (Input.DpasDetectPress(player.Index, Buttons.DPadLeft))
+            this.player.Position += new Vector2(-this.player.Speed, 0f);
+            this.player.TailList.Add(new Tail(this.player.Game, this.player.Position + new Vector2(8, 0), Color.Yellow));
+            if (Input.DpasDetectPress(player.Index,Buttons.DPadUp))
             {
-                this.player.State = new Left1(player);
+                this.player.State = new Up1(player);
             }
-            if (Input.DpasDetectPress(player.Index, Buttons.DPadRight))
+            if (Input.DpasDetectPress(player.Index, Buttons.DPadDown))
             {
-                this.player.State = new Right1(player);
+                this.player.State = new Down1(player);
             }
             base.Update(gameTime);
         }
