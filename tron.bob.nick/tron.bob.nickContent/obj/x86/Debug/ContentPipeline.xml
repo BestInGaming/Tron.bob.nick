@@ -17,7 +17,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_help.xnb</Output>
-      <Time>2013-01-27T16:27:51.9455427+01:00</Time>
+      <Time>2013-01-27T13:49:41+01:00</Time>
     </Item>
     <Item>
       <Source>Buttons\Button_leveleditor.png</Source>
@@ -26,7 +26,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_leveleditor.xnb</Output>
-      <Time>2013-01-27T16:27:51.9455427+01:00</Time>
+      <Time>2013-01-27T13:49:41+01:00</Time>
     </Item>
     <Item>
       <Source>Buttons\Button_load.png</Source>
@@ -35,7 +35,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_load.xnb</Output>
-      <Time>2013-01-27T16:27:52.0175468+01:00</Time>
+      <Time>2013-01-27T13:49:41+01:00</Time>
     </Item>
     <Item>
       <Source>Buttons\Button_quit.png</Source>
@@ -44,7 +44,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_quit.xnb</Output>
-      <Time>2013-01-27T16:27:52.0185468+01:00</Time>
+      <Time>2013-01-27T13:49:41+01:00</Time>
     </Item>
     <Item>
       <Source>Buttons\Button_scores.png</Source>
@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_scores.xnb</Output>
-      <Time>2013-01-27T16:27:52.0185468+01:00</Time>
+      <Time>2013-01-27T13:49:41+01:00</Time>
     </Item>
     <Item>
       <Source>Buttons\Button_start.png</Source>
@@ -62,7 +62,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_start.xnb</Output>
-      <Time>2013-01-27T16:27:52.0195469+01:00</Time>
+      <Time>2013-01-27T13:49:41+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
