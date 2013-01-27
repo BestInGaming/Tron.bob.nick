@@ -40,7 +40,7 @@ namespace tron.bob.nick
         }
         public override void Update(GameTime gameTime)
         {
-            switch (this.direction1)
+           /* switch (this.direction1)
             {
                 case "Right": this.player.Position += new Vector2(this.player.Speed, 0);
                     if (this.startpos.X > this.player.Position.X - 16)
@@ -71,7 +71,7 @@ namespace tron.bob.nick
                     }
                     break;
                 
-            }
+            }*/
             if (Input.EdgeDetectKeyDown(Keys.W)|| Input.DpasDetectPress(player.Index,Buttons.DPadUp))
             {
                 this.player.State = new Up1(player);

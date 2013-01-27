@@ -36,9 +36,13 @@ namespace tron.bob.nick
 
             this.player.Position += new Vector2(-this.player.Speed, 0f);
             this.player.TailList.Add(new Tail(this.player.Game, this.player.Position + new Vector2(8, 0), Color.Yellow));
-            if (Input.DetectKeyUp(Keys.A))
+            if (Input.DpasDetectPress(player.Index,Buttons.DPadUp))
             {
-                this.player.State = new Idle1(player, "Left");
+                this.player.State = new Up1(player);
+            }
+            if (Input.DpasDetectPress(player.Index, Buttons.DPadDown))
+            {
+                this.player.State = new Down1(player);
             }
             base.Update(gameTime);
         }

@@ -40,6 +40,14 @@ namespace tron.bob.nick
             {
                 this.player.State = new Idle1(player, "Right");
             }
+            if (Input.DpasDetectPress(player.Index, Buttons.DPadUp))
+            {
+                this.player.State = new Up1(player);
+            }
+            if (Input.DpasDetectPress(player.Index, Buttons.DPadDown))
+            {
+                this.player.State = new Down1(player);
+            }
             base.Update(gameTime);
         }
 
