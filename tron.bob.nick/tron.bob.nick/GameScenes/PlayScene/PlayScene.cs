@@ -16,12 +16,14 @@ namespace tron.bob.nick
         //fields
         private TronGame game;
         private Player1 player;
+        private Level level;
         private Grid grid;
         //constructor
         public PlayScene(TronGame game)
         {
             this.game = game;
             this.player = new Player1(this.game, new Vector2(32, 32), 7.5f, Color.Red, PlayerIndex.One);
+            this.level = new Level(this.game);
             this.grid = new Grid(this.game);
             this.Initialize();
         }
@@ -46,15 +48,16 @@ namespace tron.bob.nick
             {
                 this.game.GameState = new StartScene(this.game);
             }
-            player.Update(gameTime);
+        
+            this.level.update(gameTime);
         }
 
         //Draw
         public void Draw(GameTime gameTime)
         {
             this.game.GraphicsDevice.Clear(Color.Gray);
-            this.grid.draw(gameTime);
-            player.Draw(gameTime);
+            this.level.draw(gameTime);
+            
         }
     }
 }

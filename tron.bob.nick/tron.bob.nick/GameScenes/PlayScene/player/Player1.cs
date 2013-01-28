@@ -22,6 +22,7 @@ namespace tron.bob.nick
         private List<Tail> tailList = new List<Tail>();
         DrawPlayer state;
         private PlayerIndex index;
+        private Vector2 startposition;
         private Color colorPlayer;
         public Texture2D Texture
         {
@@ -62,6 +63,11 @@ namespace tron.bob.nick
             }
             
         }
+        public Vector2 StartPosition
+        {
+            get { return this.startposition; }
+            set { this.startposition = value; }
+        }
         
         public float Speed
         {
@@ -72,6 +78,7 @@ namespace tron.bob.nick
         {
             this.game = game;
             this.position = position;
+            this.startposition = position;
             this.texture = this.game.Content.Load<Texture2D>(@"IngameAssets/Player/player");
             this.rectangle = new Rectangle((int)this.position.X, (int)this.position.Y, texture.Width, texture.Height);           
             this.speed = speed;
@@ -93,6 +100,8 @@ namespace tron.bob.nick
         public void Update(GameTime gameTime)
         {
             this.state.Update(gameTime);
+            PlayerManager.Player = this;
+            PlayerManager.DetectCollisionOwnTail();
             foreach (Tail tail in this.TailList)
             {
                 tail.Update(gameTime);
@@ -102,12 +111,13 @@ namespace tron.bob.nick
         }
         public void Draw(GameTime gameTime)
         {
-            this.state.Draw(gameTime);
+            
 
             foreach (Tail tail in this.TailList)
             {
                 tail.Draw(gameTime);
             }
+            this.state.Draw(gameTime);
         }
     }
 }

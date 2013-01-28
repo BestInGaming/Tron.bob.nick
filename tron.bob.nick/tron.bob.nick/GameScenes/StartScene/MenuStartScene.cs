@@ -36,8 +36,8 @@ namespace tron.bob.nick
         private void Initialize()
         {
             this.buttonstate = Buttonstate.Start;
-            this.top = 430;
-            this.left = 3;
+            this.top = 750;
+            this.left = 625;
             this.space = 107;
             this.Loadcontent();
 
@@ -58,7 +58,7 @@ namespace tron.bob.nick
         //update
         public void Update(GameTime gameTime)
         {
-            if (Input.EdgeDetectKeyDown(Keys.Right))
+            if (Input.DpasDetectPress(PlayerIndex.One,Buttons.DPadRight)|| Input.EdgeDetectKeyDown(Keys.Right))
             {
                 this.buttonstate++;
                 if (this.buttonstate > Buttonstate.Quit)
@@ -68,7 +68,7 @@ namespace tron.bob.nick
 
             }
 
-            if (Input.EdgeDetectKeyDown(Keys.Left))
+            if (Input.DpasDetectPress(PlayerIndex.One, Buttons.DPadLeft)|| Input.EdgeDetectKeyDown(Keys.Left))
             {
                 this.buttonstate--;
                 if (this.buttonstate < Buttonstate.Start)
@@ -81,7 +81,7 @@ namespace tron.bob.nick
             ////////////////////////////////////////////////////////////////////////////////
             /////////////////////////////keyboard buttons///////////////////////////////////
             ////////////////////////////////////////////////////////////////////////////////
-            if (Input.EdgeDetectKeyDown(Keys.Enter))
+            if (Input.EdgeDetectKeyDown(Keys.Enter)|| Input.DpasDetectPress(PlayerIndex.One,Buttons.A))
             {
                 if (this.buttonstate == Buttonstate.Start)
                 {

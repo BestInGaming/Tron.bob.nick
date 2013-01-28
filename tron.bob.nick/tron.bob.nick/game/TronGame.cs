@@ -40,8 +40,9 @@ namespace tron.bob.nick
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            graphics.PreferredBackBufferWidth = 1980;
-            graphics.PreferredBackBufferHeight = 1020;
+            graphics.IsFullScreen = true;
+            graphics.PreferredBackBufferWidth = 1920;
+            graphics.PreferredBackBufferHeight = 1080;
             Window.Title  = "{TRON}";
             graphics.ApplyChanges();
         }
@@ -72,9 +73,20 @@ namespace tron.bob.nick
 
         //Update
         protected override void Update(GameTime gameTime)
-        {       
+        {
+
             this.gameState.Update(gameTime);
             Input.update();
+            if (Input.EdgeDetectKeyDown(Keys.F11))
+            {
+                graphics.IsFullScreen = false;
+                graphics.ApplyChanges();
+            }
+                if (Input.EdgeDetectKeyDown(Keys.F10)&&graphics.IsFullScreen == false)
+                {
+                    graphics.IsFullScreen = true;
+                    graphics.ApplyChanges();
+                }
             base.Update(gameTime);
         }
 

@@ -57,6 +57,20 @@ C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick\tron.bob.nick\t
 C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_quit.xnb
 C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_scores.xnb
 C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_start.xnb
+D:\DropBoxBIG\Dropbox\Bob\tron.bob.nick-bob-27-01-2013-17.30\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\IngameAssets\Player\player.xnb
+D:\DropBoxBIG\Dropbox\Bob\tron.bob.nick-bob-27-01-2013-17.30\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_help.xnb
+D:\DropBoxBIG\Dropbox\Bob\tron.bob.nick-bob-27-01-2013-17.30\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_leveleditor.xnb
+D:\DropBoxBIG\Dropbox\Bob\tron.bob.nick-bob-27-01-2013-17.30\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_load.xnb
+D:\DropBoxBIG\Dropbox\Bob\tron.bob.nick-bob-27-01-2013-17.30\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_quit.xnb
+D:\DropBoxBIG\Dropbox\Bob\tron.bob.nick-bob-27-01-2013-17.30\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_scores.xnb
+D:\DropBoxBIG\Dropbox\Bob\tron.bob.nick-bob-27-01-2013-17.30\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_start.xnb
+D:\DropBoxBIG\Dropbox\Bob\tron.bob.nick-bob-27-01-2013-17.30\tron.bob.nick\tron.bob.nick\bin\x86\Debug\tron.bob.nick.exe
+D:\DropBoxBIG\Dropbox\Bob\tron.bob.nick-bob-27-01-2013-17.30\tron.bob.nick\tron.bob.nick\bin\x86\Debug\tron.bob.nick.pdb
+D:\DropBoxBIG\Dropbox\Bob\tron.bob.nick-bob-27-01-2013-17.30\tron.bob.nick\tron.bob.nick\obj\x86\Debug\tron.bob.nick.csprojResolveAssemblyReference.cache
+D:\DropBoxBIG\Dropbox\Bob\tron.bob.nick-bob-27-01-2013-17.30\tron.bob.nick\tron.bob.nick\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\DropBoxBIG\Dropbox\Bob\tron.bob.nick-bob-27-01-2013-17.30\tron.bob.nick\tron.bob.nick\obj\x86\Debug\tron.bob.nick.exe
+D:\DropBoxBIG\Dropbox\Bob\tron.bob.nick-bob-27-01-2013-17.30\tron.bob.nick\tron.bob.nick\obj\x86\Debug\tron.bob.nick.pdb
+D:\DropBoxBIG\Dropbox\Bob\tron.bob.nick-bob-27-01-2013-17.30\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\IngameAssets\Player\tail.xnb
 C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\IngameAssets\Player\player.xnb
 C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_help.xnb
 C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_leveleditor.xnb
@@ -64,9 +78,9 @@ C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.ni
 C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_quit.xnb
 C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_scores.xnb
 C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_start.xnb
+C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\IngameAssets\Player\tail.xnb
 C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\tron.bob.nick.exe
 C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\tron.bob.nick.pdb
-C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\obj\x86\Debug\tron.bob.nick.csprojResolveAssemblyReference.cache
 C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\obj\x86\Debug\tron.bob.nick.exe
 C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\obj\x86\Debug\tron.bob.nick.pdb

@@ -64,6 +64,15 @@
       <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_start.xnb</Output>
       <Time>2013-01-27T13:49:41+01:00</Time>
     </Item>
+    <Item>
+      <Source>IngameAssets\Player\tail.png</Source>
+      <Name>IngameAssets\Player\tail</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\IngameAssets\Player\tail.xnb</Output>
+      <Time>2013-01-28T18:22:44.157857+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
