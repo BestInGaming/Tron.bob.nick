@@ -17,6 +17,7 @@ namespace tron.bob.nick
        private Rectangle rectangle;
        private Texture2D text;
        private TronGame game;
+       private float timer;
        private Color color;
        public Vector2 Position
        {
@@ -38,13 +39,25 @@ namespace tron.bob.nick
        }
        public void Update(GameTime gameTime)
        {
-           rectangle.X = (int)this.position.X;
-           rectangle.Y = (int)this.position.Y;
+           
+            this.timer += 0.1f;
+            if (this.timer >= 1)
+            {
+                timer = 1;
+                rectangle.X = (int)this.position.X;
+                rectangle.Y = (int)this.position.Y;
+
+            }
+            else
+            {
+                rectangle.X = 10000000;
+                rectangle.Y = 10000000;
+            }
        }
 
        public void Draw(GameTime gameTime)
        {
-           this.game.SpriteBatch.Draw(text, rectangle, this.color);
+           this.game.SpriteBatch.Draw(text, position, this.color);
        }
     }
 }

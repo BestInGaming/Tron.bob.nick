@@ -94,6 +94,26 @@ namespace tron.bob.nick
             gps = GamePad.GetState(index);
             return (gps.IsButtonDown(button) && ogps.IsButtonUp(button));
         }
+        public static bool RthumbStickMoveRight(PlayerIndex index)
+        {
+            gps = GamePad.GetState(index);
+            return (gps.ThumbSticks.Right.X == 1);
+        }
+        public static bool RthumbStickMoveLeft(PlayerIndex index)
+        {
+            gps = GamePad.GetState(index);
+            return (gps.ThumbSticks.Right.X == -1);
+        }
+        public static bool RthumbStickMoveUp(PlayerIndex index)
+        {
+            gps = GamePad.GetState(index);
+            return (gps.ThumbSticks.Right.Y == 1);
+        }
+        public static bool RthumbStickMoveDown(PlayerIndex index)
+        {
+            gps = GamePad.GetState(index);
+            return (gps.ThumbSticks.Right.Y == -1);
+        }
 
         //draw
         

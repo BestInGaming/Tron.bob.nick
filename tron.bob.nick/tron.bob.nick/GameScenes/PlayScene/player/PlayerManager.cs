@@ -13,16 +13,16 @@ namespace tron.bob.nick
 {
     public class PlayerManager
     {
-        private static Level level;
         private static Player1 player;
-
-        public static Level Level
-        {
-            set { level = value; }
-        }
+        private static PlayScene level;
+        
         public static Player1 Player
         {
             set { player = value; }
+        }
+        public static PlayScene Level
+        {
+            set { level = value; }
         }
 
         public static void DetectCollisionOwnTail()
@@ -31,11 +31,36 @@ namespace tron.bob.nick
             {
                 if (player.Rectangle.Intersects(tail.Rectangle))
                 {
-                   
+                    player.Game.Exit();
                 }
                 
             }
         }
+
+        public static void DetectCollisionTails()
+        {
+            for (int i = 0; i < level.Players.Count; i++)
+            {
+                for (int j = 0; j < player.TailList.Count; j++)
+                {
+                    
+                    
+                    
+                    if(level.Players[i].Rectangle.Intersects(player.TailList[j].Rectangle))
+                    {
+                        player.Game.Exit();
+                    }
+
+                }
+            }
+        }
+
+
+                    
+
+                
+
+            
 
 
 

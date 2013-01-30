@@ -35,14 +35,35 @@ namespace tron.bob.nick
         {
 
             this.player.Position += new Vector2(this.player.Speed, 0f);
-            this.player.TailList.Add(new Tail(this.player.Game, this.player.Position + new Vector2(-8, 0), Color.Yellow));
-            if (Input.DpasDetectPress(player.Index, Buttons.DPadUp))
+            if (Input.DpasDetectPress(player.Index, Buttons.DPadUp) || Input.RthumbStickMoveUp(player.Index))
             {
-                this.player.State = new Up1(player);
+                 float modulo = (this.player.Position.X >= 0) ? this.player.Position.X % 16 : 16 + this.player.Position.X % 16;
+                if (modulo >= (16f - this.player.Speed))
+                {
+                    int geheelAantalmalen16 = (int)this.player.Position.X / 16;
+                    this.player.Position = (this.player.Position.X >= 0) ? new Vector2((geheelAantalmalen16 + 1) * 16, this.player.Position.Y) :
+                                                                                new Vector2(geheelAantalmalen16 * 16, this.player.Position.Y);
+                }
+               
+                this.player.State = this.player.Up;
+                
             }
-            if (Input.DpasDetectPress(player.Index, Buttons.DPadDown))
+
+
+
+
+
+
+            if (Input.DpasDetectPress(player.Index, Buttons.DPadDown) || Input.RthumbStickMoveDown(player.Index))
             {
-                this.player.State = new Down1(player);
+                float modulo = (this.player.Position.X >= 0) ? this.player.Position.X % 16 : 16 + this.player.Position.X % 16;
+                if (modulo >= (16f - this.player.Speed))
+                {
+                    int geheelAantalmalen16 = (int)this.player.Position.X / 16;
+                    this.player.Position = (this.player.Position.X >= 0) ? new Vector2((geheelAantalmalen16 + 1) * 16, this.player.Position.Y) :
+                                                                                new Vector2(geheelAantalmalen16 * 16, this.player.Position.Y);
+                }
+                this.player.State = this.player.Down;
             }
             base.Update(gameTime);
         }

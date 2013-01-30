@@ -35,14 +35,32 @@ namespace tron.bob.nick
         {
 
             this.player.Position += new Vector2(0, this.player.Speed);
-            this.player.TailList.Add(new Tail(this.player.Game, this.player.Position + new Vector2(0,-8),Color.Yellow));
-            if (Input.DpasDetectPress(player.Index, Buttons.DPadLeft))
+            if (Input.DpasDetectPress(player.Index, Buttons.DPadLeft)||Input.RthumbStickMoveLeft(player.Index))
             {
-                this.player.State = new Left1(player);
+                float module = this.player.Position.Y % 16;
+                if (module >= 16 - this.player.Speed)
+                {
+                    int geheelAantalmalen16 = ((int)this.player.Position.Y / 16) + 1;
+                    this.player.Position = new Vector2(this.player.Position.X, geheelAantalmalen16 * 16);
+                }
+
+                this.player.State = this.player.Left;
+               
             }
-            if (Input.DpasDetectPress(player.Index, Buttons.DPadRight))
+
+
+
+            if (Input.DpasDetectPress(player.Index, Buttons.DPadRight) || Input.RthumbStickMoveRight(player.Index))
             {
-                this.player.State = new Right1(player);
+                float module = this.player.Position.Y % 16;
+                if (module >= 16 - this.player.Speed)
+                {
+                    int geheelAantalmalen16 = ((int)this.player.Position.Y / 16) + 1;
+                    this.player.Position = new Vector2(this.player.Position.X, geheelAantalmalen16 * 16);
+                }
+
+                this.player.State = this.player.Right;
+              
             }
             base.Update(gameTime);
         }

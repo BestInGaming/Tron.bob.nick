@@ -5,7 +5,7 @@
     <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>tron.bob.nick</RootNamespace>
     <AssemblyName>tron.bob.nick</AssemblyName>
@@ -59,6 +59,9 @@
     <PlatformTarget>x86</PlatformTarget>
     <XnaCompressContent>true</XnaCompressContent>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
       <Private>False</Private>
@@ -110,15 +113,6 @@
     <Compile Include="GameScenes\HelpScene\HelpScene.cs" />
     <Compile Include="GameScenes\LevelEditorScene\LevelEditorScene.cs" />
     <Compile Include="GameScenes\Options\OptionScene.cs" />
-    <Compile Include="GameScenes\PlayScene\Level\ILevel.cs" />
-    <Compile Include="GameScenes\PlayScene\Level\Level.cs" />
-    <Compile Include="GameScenes\PlayScene\Level\LevelGameOver.cs" />
-    <Compile Include="GameScenes\PlayScene\Level\LevelNextLevel.cs" />
-    <Compile Include="GameScenes\PlayScene\Level\LevelOpenDoor.cs" />
-    <Compile Include="GameScenes\PlayScene\Level\LevelPause.cs" />
-    <Compile Include="GameScenes\PlayScene\Level\LevelPaused.cs" />
-    <Compile Include="GameScenes\PlayScene\Level\LevelPlay.cs" />
-    <Compile Include="GameScenes\PlayScene\Level\LevelVictory.cs" />
     <Compile Include="GameScenes\PlayScene\player\PlayerManager.cs" />
     <Compile Include="GameScenes\PlayScene\player\states\Down1.cs" />
     <Compile Include="GameScenes\PlayScene\player\states\Idle1.cs" />

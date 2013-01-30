@@ -15,15 +15,19 @@ namespace tron.bob.nick
     {
         //fields
         private TronGame game;
-        private Player1 player;
-        private Level level;
+        private List<Player1> player = new List<Player1>();
         private Grid grid;
+
+
+        public List<Player1> Players
+        {
+            get { return this.player; }
+        }
         //constructor
         public PlayScene(TronGame game)
         {
             this.game = game;
-            this.player = new Player1(this.game, new Vector2(32, 32), 7.5f, Color.Red, PlayerIndex.One);
-            this.level = new Level(this.game);
+            
             this.grid = new Grid(this.game);
             this.Initialize();
         }
@@ -38,6 +42,9 @@ namespace tron.bob.nick
         //loadContent
         public void LoadContent()
         {
+            PlayerManager.Level = this;
+         this.player.Add(new Player1(this.game, new Vector2(16, 16), 8, Color.LightGreen, PlayerIndex.One,1));
+         this.player.Add(new Player1(this.game, new Vector2(128, 128), 2, Color.Blue, PlayerIndex.Two,2));
 
         }
 
@@ -48,16 +55,22 @@ namespace tron.bob.nick
             {
                 this.game.GameState = new StartScene(this.game);
             }
-        
-            this.level.update(gameTime);
+           
+            foreach (Player1 player in this.player)
+            {
+                player.Update(gameTime);
+            }
         }
 
         //Draw
         public void Draw(GameTime gameTime)
         {
             this.game.GraphicsDevice.Clear(Color.Gray);
-            this.level.draw(gameTime);
-            
+            this.grid.draw(gameTime);
+            foreach (Player1 player in this.player)
+            {
+                player.Draw(gameTime);
+            }
         }
     }
 }

@@ -36,16 +36,47 @@ namespace tron.bob.nick
         public override void Update(GameTime gameTime)
         {
 
-            this.player.Position += new Vector2(0,-this.player.Speed);
-            this.player.TailList.Add(new Tail(this.player.Game, this.player.Position + new Vector2(0,8), Color.Yellow));
-            if (Input.DpasDetectPress(player.Index, Buttons.DPadLeft))
+            this.player.Position += new Vector2(0, -this.player.Speed);
+            if (Input.DpasDetectPress(player.Index, Buttons.DPadLeft) || Input.RthumbStickMoveLeft(player.Index))
             {
-                this.player.State = new Left1(player);
-            }
-            if (Input.DpasDetectPress(player.Index, Buttons.DPadRight))
-            {
-                this.player.State = new Right1(player);
-            }
+
+                float modulo = (this.player.Position.Y >= 0) ?
+                                this.player.Position.Y % 16 :
+                                16 + this.player.Position.Y;
+                if (modulo <= this.player.Speed)
+                {
+                    int geheelAantalmalen16 = (int)this.player.Position.Y / 16;
+                    this.player.Position = (this.player.Position.Y >= 0) ?
+                                              new Vector2(this.player.Position.X, geheelAantalmalen16 * 16) :
+                                              new Vector2(this.player.Position.X, (geheelAantalmalen16 - 1) * 16);
+                }
+                    this.player.State = this.player.Left;
+   
+                }
+
+
+
+
+
+
+                if (Input.DpasDetectPress(player.Index, Buttons.DPadRight) || Input.RthumbStickMoveRight(player.Index))
+                {
+                    float modulo = (this.player.Position.Y >= 0) ?
+                                this.player.Position.Y % 16 :
+                                16 + this.player.Position.Y;
+
+                    if (modulo <= this.player.Speed)
+                    {
+                        int geheelAantalmalen16 = (int)this.player.Position.Y / 16;
+                        this.player.Position = (this.player.Position.Y >= 0) ?
+                                                  new Vector2(this.player.Position.X, geheelAantalmalen16 * 16) :
+                                                  new Vector2(this.player.Position.X, (geheelAantalmalen16 - 1) * 16);
+                        this.player.State = this.player.Right;
+                    
+                    }
+                }
+                
+            
             base.Update(gameTime);
         }
 
