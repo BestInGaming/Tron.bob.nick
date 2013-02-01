@@ -14,7 +14,7 @@ namespace tron.bob.nick
     class Grid
     {
         private Texture2D texture1px;
-        private int gridSize = 16;
+        private int gridSize = 32;
         private int width = 1920, height = 1080;
         private TronGame game;
 

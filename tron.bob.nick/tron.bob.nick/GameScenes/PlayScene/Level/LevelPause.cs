@@ -15,34 +15,34 @@ namespace tron.bob.nick
     {
         private Level level;
         private Image overlay;
-        private int pauseTime = 1;
-        private float timer = 0;
-        private int index = -1;
-        private string removeType;
+    
 
-        public string RemoveType
-        {
-            get { return this.removeType; }
-            set { this.removeType = value; }
-        }
+       
 
-        public int Index
-        {
-            set { this.index = value; }
-        }
+     
 
         public LevelPause(Level level)
         {
             this.level = level;
-
+            this.overlay = new Image(this.level.Game, Vector2.Zero, @"InGameAssets/overlay/NextGame");
         }
         public void Update(GameTime gameTime)
         {
-           
+            if (Input.EdgeDetectKeyDown(Keys.Space))
+            {
+                foreach (Player1 p in this.level.Players)
+                {
+                    p.Position = p.StartPos;
+                    p.initialize();
+                    this.level.LevelState = level.levelplay;
+                }
+            }
         }
+
 
         public void Draw(GameTime gameTime)
         {
+            this.overlay.Draw(gameTime);
         }
     }
 }

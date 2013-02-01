@@ -20,11 +20,7 @@ namespace tron.bob.nick
         private LevelPause levelPause;
         private Grid grid;
         private LevelPlay levelPlay;
-        private LevelGameOver levelGameOver;
-        private LevelOpenDoor levelOpenDoor;
-        private LevelNextLevel levelNextLevel;
         private LevelVictory levelVictory;
-        private LevelPaused levelPaused;
         private ILevel levelState;
 
         public List<Player1> Players
@@ -35,18 +31,6 @@ namespace tron.bob.nick
         public LevelVictory LevelVictory
         {
             get { return this.levelVictory; }
-        }
-        public LevelGameOver LevelGameOver
-        {
-            get { return this.levelGameOver; }
-        }
-        public LevelNextLevel LevelNextLevel
-        {
-            get { return this.levelNextLevel; }
-        }
-        public LevelPaused LevelPaused
-        {
-            get { return this.levelPaused; }
         }
         public TronGame Game
         {
@@ -77,23 +61,23 @@ namespace tron.bob.nick
             this.game = game;
             this.levelPlay = new LevelPlay(this);
             this.levelPause = new LevelPause(this);
-            this.levelOpenDoor = new LevelOpenDoor(this);
-            this.levelGameOver = new LevelGameOver(this);
-            this.levelNextLevel = new LevelNextLevel(this);
             this.levelVictory = new LevelVictory(this);
-            this.levelPaused = new LevelPaused(this);
             this.levelState = new LevelPlay(this);
-            this.players.Add(new Player1(this.game,new Vector2(16,32),7.5f,Color.Orange,PlayerIndex.One));
             this.grid = new Grid(this.game);
+            this.players.Add(new Player1(this.game, new Vector2(0f, 5f * 16f), 8, Color.LightGreen, PlayerIndex.One, 1));
+            this.players.Add(new Player1(this.game, new Vector2((24f * 16f) * 5, 5f * 16f), 8, Color.Blue, PlayerIndex.Two, 2));
+            this.players.Add(new Player1(this.game, new Vector2(0, 65f * 16f), 8, Color.Black, PlayerIndex.Three, 3));
+            this.players.Add(new Player1(this.game, new Vector2((24f * 16f) * 5, 65f * 16f), 8, Color.White, PlayerIndex.Four, 4));
+
+
         }
-
-
 
 
 
         public void update(GameTime gameTime)
         {
             PlayerManager.Level = this;
+            PlayerManager.Endgame();
             this.levelState.Update(gameTime);
         }
         public void draw(GameTime gameTime)

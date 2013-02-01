@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\IngameAssets\Player\player.xnb</Output>
+      <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\derp-versie\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\IngameAssets\Player\player.xnb</Output>
       <Time>2013-01-25T10:42:32+01:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_help.xnb</Output>
+      <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\derp-versie\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_help.xnb</Output>
       <Time>2013-01-27T13:49:41+01:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_leveleditor.xnb</Output>
+      <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\derp-versie\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_leveleditor.xnb</Output>
       <Time>2013-01-27T13:49:41+01:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_load.xnb</Output>
+      <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\derp-versie\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_load.xnb</Output>
       <Time>2013-01-27T13:49:41+01:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_quit.xnb</Output>
+      <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\derp-versie\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_quit.xnb</Output>
       <Time>2013-01-27T13:49:41+01:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_scores.xnb</Output>
+      <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\derp-versie\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_scores.xnb</Output>
       <Time>2013-01-27T13:49:41+01:00</Time>
     </Item>
     <Item>
@@ -61,7 +61,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_start.xnb</Output>
+      <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\derp-versie\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\Buttons\Button_start.xnb</Output>
       <Time>2013-01-27T13:49:41+01:00</Time>
     </Item>
     <Item>
@@ -70,8 +70,26 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\IngameAssets\Player\tail.xnb</Output>
+      <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\derp-versie\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\IngameAssets\Player\tail.xnb</Output>
       <Time>2013-01-28T18:22:44+01:00</Time>
+    </Item>
+    <Item>
+      <Source>IngameAssets\overlay\NextGame.png</Source>
+      <Name>IngameAssets\overlay\NextGame</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\derp-versie\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\IngameAssets\overlay\NextGame.xnb</Output>
+      <Time>2013-01-30T23:17:43.0155612+01:00</Time>
+    </Item>
+    <Item>
+      <Source>IngameAssets\Player\test.png</Source>
+      <Name>IngameAssets\Player\test</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\bob\Documents\Visual Studio 2010\Projects\derp-versie\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\IngameAssets\Player\test.xnb</Output>
+      <Time>2013-01-31T15:25:04.7270231+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -79,10 +97,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nickContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nickContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\bob\Documents\Visual Studio 2010\Projects\tron.bob.nick-bob\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\bob\Documents\Visual Studio 2010\Projects\derp-versie\tron.bob.nick\tron.bob.nickContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\bob\Documents\Visual Studio 2010\Projects\derp-versie\tron.bob.nick\tron.bob.nick\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\bob\Documents\Visual Studio 2010\Projects\derp-versie\tron.bob.nick\tron.bob.nickContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\bob\Documents\Visual Studio 2010\Projects\derp-versie\tron.bob.nick\tron.bob.nick\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

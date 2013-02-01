@@ -25,10 +25,12 @@ namespace tron.bob.nick
             {
                 this.level.Game.GameState = new StartScene(level.Game);
             }
-            foreach (Player1 player in this.level.Players)
-            {
-                player.Update(gameTime);
-            }
+                foreach (Player1 player in this.level.Players)
+                {
+                    player.Update(gameTime);
+                    
+                }
+                
           
         }
 

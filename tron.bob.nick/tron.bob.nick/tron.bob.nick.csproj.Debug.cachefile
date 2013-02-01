@@ -6,3 +6,5 @@ Content\Buttons\Button_quit.xnb
 Content\Buttons\Button_scores.xnb
 Content\Buttons\Button_start.xnb
 Content\IngameAssets\Player\tail.xnb
+Content\IngameAssets\overlay\NextGame.xnb
+Content\IngameAssets\Player\test.xnb
